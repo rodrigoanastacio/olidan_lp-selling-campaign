@@ -1,0 +1,81 @@
+.c-accordion {
+  &__item {
+    border-bottom: 1px solid #e5e5e5;
+    transition: all 0.4s ease 0s;
+    position: relative;
+  }
+
+  &__label {
+    width: 100%;
+    padding: 20px 0;
+    text-align: left;
+    font-size: 22px;
+
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: 769px) {
+      padding: 20px;
+    }
+
+    &::after {
+      content: url(/arrow-right.svg);
+    }
+
+    &.is-open::after {
+      content: url(/arrow-down.svg);
+      position: absolute;
+      top: 17px;
+      right: 0;
+
+      @media (min-width: 769px) {
+        right: 20px;
+      }
+    }
+
+    strong {
+      font-weight: 500;
+      line-height: 34px;
+      width: 90%;
+      display: block;
+    }
+
+    & .separator {
+      width: 10px;
+      height: 10px;
+      top: 26px;
+      right: 10px;
+      border-bottom: 2px solid #e5e5e5;
+      position: absolute;
+    }
+
+    & .separator > span {
+      width: 10px;
+      height: 10px;
+      top: 4px;
+      right: 4px;
+      border-right: 2px solid #e5e5e5;
+      position: absolute;
+    }
+  }
+
+  &__content {
+    display: none;
+    padding: 0 0 20px;
+    width: 90%;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 15px;
+
+    @media (min-width: 769px) {
+      padding: 0 20px 20px;
+      width: 100%;
+    }
+  }
+}
