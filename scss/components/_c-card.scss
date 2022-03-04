@@ -1,0 +1,11 @@
+.c-card {
+  flex: 1;
+
+  & + .c-card {
+    margin-left: 25px;
+  }
+
+  &__image {
+    width: 100%;
+  }
+}
