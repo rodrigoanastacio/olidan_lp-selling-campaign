@@ -1,0 +1,12 @@
+.c-card {
+  padding: 0 0 60px;
+  flex: 1;
+
+  & + .c-card {
+    margin-left: 25px;
+  }
+
+  &__image {
+    width: 100%;
+  }
+}
