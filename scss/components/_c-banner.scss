@@ -35,4 +35,10 @@
       flex-direction: row;
     }
   }
+
+  & .c-cta {
+    @media (max-width: 418px) {
+      font-size: 20px;
+    }
+  }
 }

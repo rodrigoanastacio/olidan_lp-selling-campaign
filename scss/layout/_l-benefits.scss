@@ -2,16 +2,20 @@
   // padding: 60px 0;
   margin-top: -220px;
 
+  @media (max-width: 498px) {
+    margin-top: -150px;
+  }
+
+  @media (max-width: 418px) {
+    margin-top: -80px;
+  }
+
   &__container {
     max-width: 1170px;
     width: 100%;
     margin: 0 auto;
     padding: 0 1rem;
     display: flex;
-
-    @media (min-width: 769px) {
-      // flex-direction: row;
-    }
   }
 
   & .c-card {
