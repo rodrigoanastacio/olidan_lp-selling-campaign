@@ -2,7 +2,6 @@
   width: 100%;
   height: 768px;
   position: relative;
-  z-index: -1;
 
   background-image: -webkit-gradient(
     linear,
@@ -34,6 +33,12 @@
 
     @media (min-width: 769px) {
       flex-direction: row;
+    }
+  }
+
+  & .c-cta {
+    @media (max-width: 418px) {
+      font-size: 20px;
     }
   }
 }
