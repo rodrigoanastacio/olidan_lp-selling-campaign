@@ -18,8 +18,9 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 15px;
+    flex-wrap: wrap;
 
-    @media (min-width: 769px) {
+    @media (min-width: 890px) {
       flex-direction: row;
     }
   }
@@ -29,15 +30,24 @@
     flex: 1;
 
     @media (min-width: 768px) {
-      margin-bottom: 0;
+      // margin-bottom: 0;
+      flex: calc(50% - 15px);
     }
   }
 
   & .c-testimonial + .c-testimonial {
-    margin-bottom: 0;
+    // margin-bottom: 0;
   }
 
   & .c-title {
     font-family: 'Montserrat', sans-serif;
+  }
+
+  & .u-ml-15 {
+    margin-left: 0;
+
+    @media (min-width: 890px) {
+      margin-left: 15px;
+    }
   }
 }

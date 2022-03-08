@@ -16,7 +16,30 @@
   justify-content: center;
   align-items: center;
 
+  animation: f 53s linear infinite;
+  background: linear-gradient(
+      121.19deg,
+      rgba(133, 239, 49, 0) 25.73%,
+      hsla(0, 0%, 100%, 0.3) 45.27%,
+      rgba(133, 239, 49, 0) 62.27%
+    ),
+    #55cf61;
+
+  &:hover {
+    background-color: #31b842;
+  }
+
   > span {
     margin-left: 15px;
+  }
+}
+
+@keyframes f {
+  0% {
+    background-position: -5000px 0;
+  }
+
+  to {
+    background-position: 5000px 0;
   }
 }
