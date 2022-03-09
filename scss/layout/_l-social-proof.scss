@@ -14,6 +14,15 @@
     }
   }
 
+  &__header {
+    display: flex;
+    justify-content: center;
+
+    & .c-title {
+      width: 900px;
+    }
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;

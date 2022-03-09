@@ -16,9 +16,44 @@
     margin: 0 auto;
     padding: 0 1rem;
     display: flex;
+    flex-direction: column;
+  }
+
+  &__cards {
+    display: flex;
   }
 
   & .c-card {
     z-index: 1;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__text-content {
+    flex: 1;
+  }
+
+  &__text {
+    font-size: 20px;
+    margin: 0 auto;
+    line-height: 26px;
+    margin-bottom: 25px;
+  }
+
+  &__image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__image {
+    img {
+      width: 100%;
+      max-width: 300px;
+      opacity: 0.3;
+    }
   }
 }
