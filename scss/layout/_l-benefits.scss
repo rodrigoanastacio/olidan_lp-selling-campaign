@@ -27,6 +27,13 @@
     z-index: 1;
   }
 
+  &__title {
+    .c-title {
+      width: 100%;
+      max-width: 900px;
+    }
+  }
+
   &__wrapper {
     display: flex;
   }
@@ -53,7 +60,31 @@
     img {
       width: 100%;
       max-width: 300px;
-      opacity: 0.3;
+      opacity: 0.5;
     }
   }
+}
+
+.elementor-shape {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  direction: ltr;
+  background-color: #f3f3f3;
+  height: 200px;
+}
+
+.elementor-shape svg {
+  width: 100%;
+}
+
+.elementor-shape-fill {
+  fill: #fff;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg);
 }
