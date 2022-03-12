@@ -29,14 +29,21 @@
 
   &__title {
     margin: 0 auto;
+
     .c-title {
       width: 100%;
       max-width: 900px;
+      margin-bottom: 50px;
     }
   }
 
   &__wrapper {
     display: flex;
+    flex-direction: column;
+
+    @media (min-width: 769px) {
+      flex-direction: row;
+    }
   }
 
   &__text-content {
@@ -48,6 +55,7 @@
     margin: 0 auto;
     line-height: 26px;
     margin-bottom: 25px;
+    color: var(--gray-700);
   }
 
   &__image {
@@ -55,12 +63,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
 
-  &__image {
     img {
       width: 100%;
-      max-width: 300px;
+      max-width: 400px;
       opacity: 0.5;
     }
   }
