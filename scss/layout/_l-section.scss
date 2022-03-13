@@ -13,4 +13,14 @@
       // flex-direction: row;
     }
   }
+
+  &__header {
+    margin: 0 auto;
+
+    .c-title {
+      width: 100%;
+      max-width: 900px;
+      margin-bottom: 50px;
+    }
+  }
 }
