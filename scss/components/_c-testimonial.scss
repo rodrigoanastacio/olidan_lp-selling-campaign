@@ -11,20 +11,35 @@
     }
   }
 
+  &__avatar {
+    width: 118px;
+    height: 154px;
+  }
+
   &__info {
     margin-left: 15px;
     padding: 5px 0;
   }
 
   &__title {
-    margin-bottom: 5px;
+    @media (min-width: 769px) {
+      margin-bottom: 5px;
+    }
   }
 
   &__review {
-    margin-bottom: 12px;
+    margin-bottom: 6px;
+
+    @media (min-width: 769px) {
+      margin-bottom: 12px;
+    }
   }
 
   &__text {
-    font-size: 14px;
+    font-size: 12px;
+
+    @media (min-width: 769px) {
+      font-size: 14px;
+    }
   }
 }

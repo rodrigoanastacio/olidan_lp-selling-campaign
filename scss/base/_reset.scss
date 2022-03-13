@@ -48,3 +48,11 @@ h2,
 h3 {
   font-family: 'Montserrat', sans-serif;
 }
+
+.br-desk {
+  display: none;
+
+  @media (min-width: 769px) {
+    display: block;
+  }
+}
