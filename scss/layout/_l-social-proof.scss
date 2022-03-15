@@ -27,7 +27,7 @@
   &__wrapper {
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
     flex-wrap: wrap;
 
     @media (min-width: 890px) {
@@ -45,12 +45,24 @@
     }
   }
 
+  .c-headline {
+    &__title {
+      font-size: 26px;
+      font-family: "Roboto", sans-serif;
+      font-weight: normal;
+    }
+
+    &__desc {
+      color: #686868;
+    }
+  }
+
   & .c-testimonial + .c-testimonial {
     // margin-bottom: 0;
   }
 
   & .c-title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
 
   & .u-ml-15 {
