@@ -1,0 +1,34 @@
+.l-benefits {
+  background-color: #faf9f6;
+  border-top: 1px solid rgb(196, 196, 196, 0.2);
+  border-bottom: 1px solid rgb(196, 196, 196, 0.2);
+
+  @extend .l-section;
+
+  &__container {
+    @extend .l-section__container;
+  }
+
+  &__header {
+    @extend .l-section__header;
+  }
+
+  &__wrapper {
+    @extend .l-section__wrapper;
+
+    margin-bottom: 30px;
+
+    .c-card {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    width: 900px;
+    text-align: center;
+    margin: 0 auto;
+    color: #686868;
+    margin-bottom: 30px;
+  }
+}
