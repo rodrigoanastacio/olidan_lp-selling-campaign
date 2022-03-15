@@ -25,7 +25,8 @@
 
   &__text {
     font-size: 18px;
-    width: 900px;
+    widows: 100%;
+    max-width: 900px;
     text-align: center;
     margin: 0 auto;
     color: #686868;
