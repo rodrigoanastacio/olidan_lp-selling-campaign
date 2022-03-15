@@ -3,7 +3,11 @@
   flex: 1;
 
   & + .c-image {
-    margin-left: 15px;
+    margin-left: 5px;
+
+    @media (min-width: 769px) {
+      margin-left: 10px;
+    }
   }
 
   &__image {
