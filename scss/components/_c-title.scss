@@ -1,5 +1,10 @@
 .c-title {
-  font-size: 36px;
-  line-height: 45px;
+  font-size: 26px;
+  line-height: 30px;
   text-align: center;
+
+  @media (min-width: 769px) {
+    font-size: 36px;
+    line-height: 45px;
+  }
 }

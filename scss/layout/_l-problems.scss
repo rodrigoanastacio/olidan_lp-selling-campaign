@@ -52,6 +52,13 @@
       width: 100%;
       max-width: 900px;
       margin-bottom: 50px;
+      font-size: 26px;
+      line-height: 30px;
+
+      @media (min-width: 769px) {
+        font-size: 36px;
+        line-height: 45px;
+      }
     }
   }
 
