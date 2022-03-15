@@ -8,16 +8,24 @@
   text-align: center;
 
   &__logo {
-    margin: 0 auto 50px;
+    margin: 0 auto 30px;
+    width: 210px;
+
+    @media (min-width: 769px) {
+      margin: 0 auto 50px;
+      width: 300px;
+    }
   }
 
   &__title {
     margin-bottom: 1.5rem;
     color: var(--black);
-    font-size: 30px;
+    font-size: 26px;
+    line-height: 30px;
 
     @media (min-width: 769px) {
       font-size: 40px;
+      line-height: 47px;
     }
   }
 
