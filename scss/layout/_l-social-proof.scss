@@ -1,5 +1,5 @@
 .l-social-proof {
-  padding: 60px 0;
+  padding: 50px 0;
 
   &__container {
     max-width: 1170px;
@@ -14,12 +14,23 @@
     }
   }
 
+  &__header {
+    display: flex;
+    justify-content: center;
+
+    & .c-title {
+      width: 900px;
+      margin-bottom: 50px;
+    }
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
 
-    @media (min-width: 769px) {
+    @media (min-width: 890px) {
       flex-direction: row;
     }
   }
@@ -29,15 +40,33 @@
     flex: 1;
 
     @media (min-width: 768px) {
-      margin-bottom: 0;
+      // margin-bottom: 0;
+      flex: calc(50% - 15px);
     }
   }
 
-  & .c-testimonial + .c-testimonial {
-    margin-bottom: 0;
+  .c-headline {
+    &__title {
+      font-size: 26px;
+      line-height: 32px;
+      font-family: "Roboto", sans-serif;
+      font-weight: normal;
+    }
+
+    &__desc {
+      color: #686868;
+    }
   }
 
   & .c-title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  & .u-ml-15 {
+    margin-left: 0;
+
+    @media (min-width: 890px) {
+      margin-left: 15px;
+    }
   }
 }

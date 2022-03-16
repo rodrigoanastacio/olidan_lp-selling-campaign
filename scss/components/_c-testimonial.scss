@@ -7,8 +7,13 @@
 
   & + .c-testimonial {
     @media (min-width: 769px) {
-      margin-left: 15px;
+      // margin-left: 15px;
     }
+  }
+
+  &__avatar {
+    width: 118px;
+    height: 154px;
   }
 
   &__info {
@@ -17,14 +22,26 @@
   }
 
   &__title {
-    margin-bottom: 5px;
+    @media (min-width: 769px) {
+      margin-bottom: 5px;
+    }
   }
 
   &__review {
-    margin-bottom: 12px;
+    margin-bottom: 6px;
+
+    @media (min-width: 769px) {
+      margin-bottom: 12px;
+    }
   }
 
   &__text {
-    font-size: 14px;
+    font-size: 12px;
+    color: var(--gray-700);
+
+    @media (min-width: 769px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
   }
 }

@@ -1,16 +1,23 @@
-@import './abstract/fonts.scss';
-@import './base/reset';
+@import "./abstract/fonts.scss";
+@import "./base/reset";
 
-@import './components/c-title';
-@import './components/c-accordion';
-@import './components/c-banner';
-@import './components/c-headline';
-@import './components/c-cta';
-@import './components/c-card';
-@import './components/c-testimonial';
+@import "./components/c-title";
+@import "./components/c-accordion";
+@import "./components/c-container";
+@import "./components/c-banner";
+@import "./components/c-headline";
+@import "./components/c-cta";
+@import "./components/c-image";
+@import "./components/c-card";
+@import "./components/c-testimonial";
 
-@import './layout/l-section';
-@import './layout/l-benefits';
-@import './layout/l-social-proof';
+@import "./layout/l-section";
+@import "./layout/l-problems";
+@import "./layout/l-benefits";
+@import "./layout/l-social-proof";
+@import "./layout/l-about";
+@import "./layout/l-footer";
 
-@import './state/is-open';
+@import "./state/is-open";
+
+@import "./utils/u-class";

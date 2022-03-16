@@ -1,0 +1,29 @@
+.l-footer {
+  width: 100%;
+  background-color: #f3f3f3;
+
+  svg {
+    width: 100%;
+  }
+
+  .shape-fill {
+    fill: #fff;
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+
+  &__container {
+    @extend .c-container;
+
+    padding: 60px 1rem;
+    text-align: center;
+  }
+
+  &__copy {
+    font-size: 14px;
+    color: var(--gray-700);
+  }
+}

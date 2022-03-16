@@ -1,24 +1,35 @@
 .l-benefits {
-  // padding: 60px 0;
-  margin-top: -220px;
+  background-color: #faf9f6;
+  border-top: 1px solid rgb(196, 196, 196, 0.2);
+  border-bottom: 1px solid rgb(196, 196, 196, 0.2);
 
-  @media (max-width: 498px) {
-    margin-top: -150px;
-  }
-
-  @media (max-width: 418px) {
-    margin-top: -80px;
-  }
+  @extend .l-section;
 
   &__container {
-    max-width: 1170px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 1rem;
-    display: flex;
+    @extend .l-section__container;
   }
 
-  & .c-card {
-    z-index: 1;
+  &__header {
+    @extend .l-section__header;
+  }
+
+  &__wrapper {
+    @extend .l-section__wrapper;
+
+    margin-bottom: 30px;
+
+    .c-card {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    widows: 100%;
+    max-width: 900px;
+    text-align: center;
+    margin: 0 auto;
+    color: #686868;
+    margin-bottom: 30px;
   }
 }

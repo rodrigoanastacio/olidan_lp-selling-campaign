@@ -1,12 +1,15 @@
 .c-card {
-  padding: 0 0 60px;
-  flex: 1;
+  background-color: #f5efef;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  padding: 18px 6px 18px;
 
-  & + .c-card {
-    margin-left: 25px;
-  }
+  display: flex;
+  align-items: center;
+  flex: calc(50% - 15px);
 
-  &__image {
-    width: 100%;
+  &__text {
+    color: #686868;
+    line-height: 22px;
   }
 }
