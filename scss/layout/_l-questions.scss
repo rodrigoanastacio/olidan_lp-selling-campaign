@@ -1,0 +1,10 @@
+.l-questions {
+  @extend .l-section;
+
+  &__container {
+    @extend .l-section__container;
+  }
+  .c-title {
+    margin-bottom: 30px;
+  }
+}
